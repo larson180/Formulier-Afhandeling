@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,
               initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,16 +12,17 @@
         Naam: <input type="text" name="naam" placeholder="
                naam" required /><br /> 
         Land:
-        <select name="land">
+        <select class="Naam" name="land">
                 <option value="NL">Nederland</option>
                 <option value="DE">Duitsland</option>
                 <option value="EN">Engeland</option>
                 <option value="FR">Frankrijk</option>
                 <option value="ES">Spanje</option>
                 <option value="IT">Italiaans</option>
+                
 </select>
 <br />
-<input type="submit" name="submit" value="gegevens
+<input class="Btn" type="submit" name="submit" value="gegevens
        versturen"/>
 </form>
 
