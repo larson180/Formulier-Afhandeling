@@ -15,6 +15,9 @@
                 <option value="NL">Nederland</option>
                 <option value="DE">Duitsland</option>
                 <option value="EN">Engeland</option>
+                <option value="FR">Frankrijk</option>
+                <option value="ES">Spanje</option>
+                <option value="IT">Italiaans</option>
 </select>
 <br />
 <input type="submit" name="submit" value="gegevens
@@ -26,16 +29,23 @@
               $naam = $_POST["naam"];
               $land = $_POST["land"];
               if($land=='NL'){
-                     echo 'Goedemorgen'.$naam;
+                     echo 'Goedemorgen: '.$naam;
               }
               elseif($land=='DE'){
-                     echo 'Goedemorgen'.$naam;
+                     echo 'Guten Morgen: '.$naam;
               }
               elseif($land=='EN'){
-                     echo 'Good morning'.$naam;
+                     echo 'Good morning: '.$naam;
               }
-
-
+              elseif($land=='FR'){
+                     echo 'Bonjour: '.$naam;
+              }
+              elseif($land=='ES'){
+                     echo 'Buenos días: '.$naam;
+              }
+              elseif($land=='IT'){
+                     echo 'Buongiorno: '.$naam;
+              }
        }
        ?>
 
