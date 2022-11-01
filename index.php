@@ -8,7 +8,7 @@
 </head>
 <body>
 
-        <form method="post" action="">
+        <form method="get" action="">
         Naam: <input type="text" name="naam" placeholder="
                naam" required /><br/> 
         Land:
@@ -28,32 +28,35 @@
        versturen"/>
 </form>
        <?php
+if(isset($_GET['submit'])){
+$land = $_GET['land'];
+       switch($land){
+              case "NL":
+                     echo "Goedemorgen";
+              break;
+              case "DE":
+                     echo "Guten morgen";
+              break;
+              case "EN":
+                     echo "Good morning";
+              break;
+              case "FR":
+                     echo "Bonjour";
+              break;
+              case "ES":
+                     echo "Buenos dias";
+              break;
+              case "IT":
+                     echo "Buongiorno";
+              break;
+       }
+
+}
 
 
 
   
-switch ($_POST['land']){
 
-       case "NL":
-              echo "Goedemorgen";
-              break;
-       case "DE":
-              echo "Gutenmorgen";
-              break;
-       case "EN":
-              echo "Good morning";
-              break;
-       case "FR":
-              echo "Bonjour";
-              break;
-       case "ES":
-              echo "Buenos dias";
-              break;
-       case "IT":
-              echo "Buongiorno";
-              break;
-
-}
 ?>
 
 </body>
